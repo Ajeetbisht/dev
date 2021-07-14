@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Ajeet}{Bisht}{ \\
+\href{https://ajeetbisht5.medium.com/}{Medium} |
+\href{mailto:ajeetbisht5@gmail.com}{ajeetbisht5@gmail.com} |
+\href{https://github.com/Ajeetbisht}{Github} |
+\href{https://in.linkedin.com/in/ajeet-bisht-1516a8165}{Linkedin}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{G.G.S.I.P University}
+\descript{Bachelor of Computer Application}
+\location{2017 - 2020 | New Delhi, India}
+\sectionsep
+
+\subsection{St Jhon's convent School}
+\location{Grad. May 2017|  New Delhi, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/Ajeetbisht}{\custombold{Ajeetbisht}} \\
+LinkedIn://  \href{https://in.linkedin.com/in/ajeet-bisht-1516a8165}{\custombold{ajeet-bisht-1516a8165}} \\
+Medium://  \href{https://ajeetbisht5.medium.com/}{\custombold{ajeetbisht5}} \\
+Portfolio://  \href{https://www.ajeetbisht.github.io/portfolio/Resume.html}{\custombold{Ajeet Portfolio}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Technical}
+Python \textbullet{}   Java \textbullet{} JavaScript \\ \textbullet{} Django  \textbullet{} React \textbullet{} Node.js \\ \textbullet{} Next.js  \textbullet{} Fast.api
+\subsection{Databases}
+Postgresql\textbullet{}  MongoDB \textbullet{}  Redis \\
+Elastic Search\textbullet{}  Mysql
+\subsection{Tools}
+Git\textbullet{}  Github\textbullet{}  Docker
+\subsection{Soft Skills}
+Bilingual Communicator (English, Hindi) \\
+\textbullet{} Story Telling \textbullet{} Story Writing \\
+\textbullet{} Drawing \textbullet{} UI Design
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Data Structures \\
+Algorithm Design And Analysis \\
+Database Management System \\
+Operating System \\
+Object Oriented Programming \\
+Linux \\
+Computer Network \\
+Data Mining \\
+Web Technology \\
+Discrete Mathematics \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SoftSKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interset}
+Story Telling \\
+Mobile UI Design \\
+Music \\
+Cricket \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{SQL Developer}
+\descript{| Freelance }
+\location{August 2020 - May 2021 | Remote}
+\vspace{\topsep} 
+\begin{tightemize}
+\item Built a software which uses Common Crawl's petabytes of collected scrapped data of websites to detect if it belongs to a restaurant and scrapped details such as Name,Address,Phone Number.. etc.
+\item Built an API for the Restaurant's Search Engine web app.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Personal Computer Science Tutor}
+\descript{| }
+\location{September 2019 – April 2020 | New Delhi, India}
+\begin{tightemize}
+\item Taught over 30+ student in subject like computer science, information practice help them in improving grades.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Student Mentor}
+\descript{| }
+\location{Jan 2019 – April 2020 | New Delhi, India}
+\begin{tightemize}
+\item Taught over 30+ student in subject like accountancy, business studies, economics help them in improving grade.
+\item Wrote several notes and build test paper for students. 
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Rest Api Testing Tool}
+\href{https://github.com/Ajeetbisht/Rest-Api-Tester}{Github} |
+\href{https://github.com/Ajeetbisht/Rest-Api-Tester}{View} \\
+\location{March 2021}
+\begin{tightemize}
+\item Develop Rest Api testing tool for developer help in testing GET, POST, PUT, PATCH, DELETE request .
+\item Available in Web version google chrome extension vs code extension to help developer for  Built an API.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{E-commerce}
+\href{https://github.com/Ajeetbisht/Rest-Api-Tester}{Github} |
+\href{https://github.com/Ajeetbisht/Rest-Api-Tester}{View} \\
+\location{March 2021}
+\begin{tightemize}
+\item Built a software which uses Common Crawl's petabytes of collected scrapped data of websites to detect if it belongs to a restaurant and scrapped details such as Name,Address,Phone Number.. etc.
+\item Built an API for the Restaurant's Search Engine web app.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Medic web App}
+\href{https://github.com/Ajeetbisht/Rest-Api-Tester}{Github} |
+\href{https://github.com/Ajeetbisht/Rest-Api-Tester}{View} \\
+\location{March 2021}
+\begin{tightemize}
+\item Built a software which uses Common Crawl's petabytes of collected scrapped data of websites to detect if it belongs to a restaurant and scrapped details such as Name,Address,Phone Number.. etc.
+\item Built an API for the Restaurant's Search Engine web app.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Recommender System}
+\href{https://github.com/Ajeetbisht/Rest-Api-Tester}{Github} |
+\href{https://github.com/Ajeetbisht/Rest-Api-Tester}{View} \\
+\location{April 2021}
+\begin{tightemize}
+\item Built a software which uses Common Crawl's petabytes of collected scrapped data of websites to detect if it belongs to a restaurant and scrapped details such as Name,Address,Phone Number.. etc.
+\item Built an API for the Restaurant's Search Engine web app.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Activities} 
+
+\begin{tabular}{rll}
+2020   & CPj Linux User Group\\
+2019   & CPj Operating System Group\\
+
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
